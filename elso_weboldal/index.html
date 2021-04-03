@@ -6,13 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Első weboldal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header>
-        <div class="page-title">Welcome to my Page!</div>
+        <div class="page-title">Welcome to my page!</div>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu-item">
+                    <!-- # hrf attribútum mondja meg h a link hova mutat -->
+                    <a href="#">Home</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#">Documents</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#">About us</a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+    <main class="main-content">
+        <h1>This is my first article</h1>
+        <div class="created-date">
+            <time datetime="2020-02-03">Feb. 3</time> by admin
+        </div>
+        <p class="content-lead">
+            <!-- lorem30 -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores incidunt porro placeat, et voluptates
+            autem. Eos sint numquam alias laboriosam iure magnam iste, vel excepturi, atque, hic sequi dignissimos
+            velit.
+        </p>
+        <figure class="image-container">
+            <a href="./blue_bird.jpg">
+                <img src="./blue_bird_sm.jpg" alt="Image of a blue bird" />
+            </a>
+            <figcaption>Blue blue</figcaption>
+        </figure>
+        <p class="content-lead">
+            <!-- lorem150 -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab beatae rerum dolorem tenetur inventore
+            magnam officiis, voluptatem distinctio impedit culpa nihil, fugiat alias omnis quis. Dicta maiores magni
+            quibusdam? Eum vero provident doloremque ex fugiat repellendus neque, nesciunt eos accusantium, magni quod
+            natus dignissimos quos eaque maxime laudantium temporibus sint saepe itaque fugit aut inventore fuga harum?
+            Quos, doloribus expedita eum voluptatum nostrum maiores saepe laudantium excepturi sed quo laboriosam quam
+            quae adipisci itaque ad tempore voluptatibus sint porro incidunt velit minus ea veritatis. Non vel aliquam
+            numquam unde cupiditate exercitationem voluptatem ut commodi quia quibusdam perferendis aperiam dignissimos
+            veniam ab, necessitatibus optio. Quibusdam aliquam provident sint error adipisci. In suscipit animi
+            exercitationem accusantium voluptas eius, eos, dolor earum, minus magni dolores! Eos iste praesentium nobis
+            ipsum esse nihil aliquam, illum suscipit harum magni maxime, rerum iure nostrum fuga eaque. Corporis
+            voluptates nostrum eligendi suscipit maxime fugiat. Enim, recusandae.
+        </p>
+    </main>
 </body>
 
 </html>

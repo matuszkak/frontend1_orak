@@ -1,15 +1,81 @@
 body {
     background-color: #488ccd;
+    font-family: 'Montserrat', sans-serif;
     width: 800px;
     color: white;
     /* alul felül 0 a margó, jobbra balra pedig automatikus */
     margin: 0 auto;
-    /* paddling: belő margó, befelé tolja atartalmat */
+    /* paddling: belő margó, befelé tolja a tartalmat */
     padding: 50px;
-    .page-title {
+}    
+   
+.page-title {
         font-size: 50px;
-        font-weigh: 200px;
-        margin-top: 40 px
-        margin-bottom: 40 px;
+        font-weight: 200px;
+        margin-top: 40 px;
+        margin-bottom: 40 px
+}
+
+.main-menu {
+        background-color: #284c80;
+        padding: 0;
+}
+
+.main-menu-item {
+    display: inline-block;
+}
+/* inline-block miatt inline marad, de block property-t is örökóköl, width, height, padding */
+
+.main-menu-item a {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 20px  0;
+    color: rgb(188,248,255);
+    display: block;
+} 
+
+.main-menu-item a:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+     /* ha a menüpont fölé viszem az egeret - hover állapot - akkor aláhúzza fehérrel */
+
+.image-container {
+         /* minden ebben az elemben lévő elemet középre igazít */
+         text-align: center;
+}
+
+figcaption {
+         font-size: 12px;
+         font-style: italic;
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(237,245,255);
+    margin-bottom: 5px;
+    margin-top: 100px;
+}
+
+.created-date {
+    margin-bottom: 40px;
+    font-style: italic;
+    color: #284c80;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.content-lead,
+.content-body {
+    line-height: 1.7;
     }
+
+.content-lead {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.content-body {
+    font-size: 18px;
 }
