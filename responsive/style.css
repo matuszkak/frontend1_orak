@@ -1,0 +1,96 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(242, 237, 228);
+    margin: 0;
+  }
+
+  header,
+  main {
+      width: 80vw;
+      margin: 0 auto;
+  }
+
+  header {
+      display: flex;
+      /* mostantól flex container, gyerekei flex itemek */
+      /* egyymás mellé kerülnek alapértelmezésben */
+  }
+
+  .logo {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    /* 1rem = 16px */
+  }
+  .logo > h1 {
+    font-size: 2.25rem;
+    margin: 0;
+    padding: 0;
+    border-bottom: 4px solid black;
+  }
+  .logo > h2 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    font-style: italic;
+    line-height: 0;
+    color: rgba(90, 86, 79, 1);
+    letter-spacing: 0.3rem;
+  }
+
+ .menu-container {
+     flex-grow: 1;
+ }
+  
+  .menu {
+      display: flex;
+      list-style: none;
+      padding: 0
+ }
+
+ .menu-item {
+     flex-grow: 1;
+ }
+
+ .menu-item:nth-child(1) {
+    border-bottom: 4px solid red;
+  }
+  .menu-item:nth-child(2) {
+    border-bottom: 4px solid lightblue;
+  }
+  .menu-item:nth-child(3) {
+    border-bottom: 4px solid plum;
+  }
+  .menu-item:nth-child(4) {
+    border-bottom: 4px solid green;
+  }
+  .menu-item:nth-child(5) {
+    border-bottom: 4px solid yellow;
+  }
+
+  .menu-item a {
+      text-decoration: none;
+      color: black;
+      height: 2rem;
+      display: flex;
+      /* a magasság inline elemeken nem érvényes, de áttesszük felxbe */
+      /* /* a felx itemek itt a menupontban lévő karakterek */
+      align-items: center;
+/* függőleges középre igazítás */
+      justify-content: center;
+      /* vízszintes középre igazítás  */
+      
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
