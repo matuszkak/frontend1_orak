@@ -47,6 +47,7 @@ body {
      flex-grow: 1;
  }
   
+ /* alapból ne látszódjon a checkbox és a label=hamburger menu */
 .menu-checkbox,
 .toggle-label {
   display: none;
@@ -94,6 +95,7 @@ body {
 .menu-item:hover {
     border-bottom: 4px solid transparent;
     background-color: rgba(189, 198, 233, 0.56);
+    transition: background-color 1s ease-out;
   }
 
   .main-article {
@@ -194,7 +196,7 @@ body {
   }
   
 .logo {
-  width: 80%;
+   width: 80%;
 }
 
 .toggle-label {
