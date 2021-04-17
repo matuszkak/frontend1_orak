@@ -7,7 +7,7 @@ document.querySelector('.menu-button').addEventListener('click', function () {
   document.querySelector('.close-menu').classList.remove('js-hidden');
 });
 
-document.querySelector('close-menu').addeventlistener('click', function () {
+document.querySelector('.close-menu').addEventListener('click', function () {
   document.querySelector('body').classList.remove('js-menu-open');
   document.querySelector('.close-menu').classList.add('js-hidden');
 });
