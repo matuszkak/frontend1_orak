@@ -43,7 +43,7 @@ body {
   transition: right 0.5s ease-in-out;
   overflow-x: hidden;
 
-  /* vizszintes scroll eltüntetése */
+  /* vizszintes scroll eltüntetése mobilon nem működik sajnos... ezért display none-t kell a menure rakni majd */
 }
 
 header {
@@ -247,6 +247,7 @@ header {
     text-align: center;
     z-index: -1;
     width: 50%;
+    display: none;
   }
 
   header .main-menu ul {
@@ -268,6 +269,14 @@ header {
     order: 3;
     height: 46px;
   }
+
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 .js-hidden {
@@ -276,4 +285,8 @@ header {
 
 .js-menu-open {
   right: 50%;
+}
+
+.main-menu.js-show {
+  display: block;
 }
