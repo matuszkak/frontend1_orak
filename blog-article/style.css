@@ -121,16 +121,17 @@ body {
   left: -30px;
 }
 
-
-
-/* --------------------------------  comment section is grid  --------------------------------- */
-
+/* -------------------------------  comment section is grid  ---------------------------------  */
 .comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .comment,
 .comment-add {
   display: grid;
+  grid-template-columns: [sidebar] 15vw [content-start] 50vw [content-end];
 }
 
 .comment {
@@ -142,9 +143,6 @@ body {
 
 .comment:last-child {
   border-bottom: none;
-}
-
-.comment-text {
 }
 
 .comments-count .fa-comment {
@@ -171,7 +169,13 @@ body {
 /* --------------------------------  comment form is grid  --------------------------------- */
 
 .form-container {
+  grid-column: content-start / content-end;
+
   /* another grid inside the grid */
+  display: grid;
+  grid-template-columns: 60% 35%;
+  grid-column-gap: 5%;
+  grid-row-gap: 20px;
 }
 
 input[type="text"],
@@ -181,6 +185,7 @@ textarea {
 
 .form-container .title,
 .form-container textarea {
+  grid-column: 1 / 3;
 }
 
 .form-container .title {
@@ -191,12 +196,16 @@ textarea {
 
 /* by default title and name goes to the the right place, but we can be explicit */
 input[name="title"] {
+  grid-column: 1 / 2;
 }
 
 input[name="name"] {
+  grid-column: 2 / 3;
 }
 
 .form-container input[type="submit"] {
+  grid-column: 2 / 3;
+  justify-self: end;
   width: 150px;
   height: 55px;
   background-color: #81aaa9;
@@ -249,6 +258,7 @@ input[name="name"] {
   .form-container,
   .comment .author,
   .comment-text {
+    grid-column: sidebar / content-end;
   }
 
   .main .author {
